@@ -1,7 +1,7 @@
 # cppinvue
-vue.js and firebase practice
+vue.js, firebase and REST API practice
 
-Deployed URL: https://democpp-e38a1.web.app
+Deployed URL: https://demosch.web.app
 ## Project setup
 ```
 npm install
