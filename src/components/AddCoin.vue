@@ -1,7 +1,7 @@
 <template>
     <div id="formContainer">
         <form id="forms">
-            <h1 class="divTitle">Add Coins</h1>
+            <h1 class="divTitle">Add Result</h1>
 
             <label for="coin">Coin Name:</label>
             <input type="text" id="coin" required="" placeholder="Name of Coin"><br>
@@ -69,8 +69,8 @@ export default {
 <style scoped>
 
 .divTitle{
-    background-color: gold;
-    color: black;
+    background-color: firebrick;
+    color: whitesmoke;
 }
 
 #forms{

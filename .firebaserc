@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "democpp-e38a1"
-  }
+    "staging": "demosch"
+  },
+  "targets": {}
 }

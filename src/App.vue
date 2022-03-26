@@ -29,7 +29,7 @@ export default {
 #app::before {    
     content: "";
     pointer-events: none;
-    background-image: url('doge.jpg');
+    background-image: url('uni.png');
     background-position: center;
     background-size: cover;
     position: absolute;

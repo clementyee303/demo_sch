@@ -1,13 +1,12 @@
 <template>
     <div style = "text-align: center">
-        <h1 id = "mainHead">CRYPTO PAPER PORTFOLIO</h1>
+        <h1 id = "mainHead">API DEVELOPMENT Demo School Results Tracker</h1>
         <div id = "firebaseui-auth-container"></div>
         <div id = "pageContent">
-            Crypto Paper Portfolio (CPP) is an app to to track your crypto portfolio. <br>
-            Enter coin details and get real time Profit and Loss update of your Portfolio.
+            This was created to showcase the use of database storage and REST API usage 
         </div>
     </div>
-    <h5>copyright@cpp-2021</h5>
+    <h5>clement 2022</h5>
 </template>
 
 <script>
@@ -43,8 +42,8 @@ export default {
 
 <style scoped>
 h1 {
-    background-color: gold;
-    color: black;
+    background-color: firebrick;
+    color: whitesmoke;
 }
 
 #firebaseui-auth-container {

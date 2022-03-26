@@ -11,8 +11,9 @@
       </div>
       <div> 
         <p> 
-        Name: <strong> {{user.displayName}} </strong> <br>
+        Name: <strong> <span id="name">{{user.displayName}}</span> </strong> <br>
         Email: <strong> {{user.email}} </strong> <br>
+        Phone Number: <strong> <span id="phoneNumber"></span> </strong> <br>
         Uid: <strong> {{user.uid}} </strong> <br>
         Provider: <strong> {{user.providerData[0].providerId}} </strong> 
         </p>
@@ -48,8 +49,21 @@ export default {
       onAuthStateChanged(auth, (user) => {
         if (user) {
           this.user = user;
+          getData()
         }
       })
+      async function getData() {
+        const auth = getAuth();
+        const userId = auth.currentUser.uid;  
+        let studentsDetails = await fetch("https://firestore.googleapis.com/v1/projects/demosch/databases/(default)/documents/student/" + String(userId))
+        let studentsDetailsJson = await studentsDetails.json()
+        let firstName = studentsDetailsJson["fields"]["firstName"]["stringValue"]
+        let lastName = studentsDetailsJson["fields"]["lastName"]["stringValue"]
+        let name = firstName + " " + lastName
+        let phoneNumber = studentsDetailsJson["fields"]["phoneNumber"]["stringValue"]
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("phoneNumber").innerHTML = phoneNumber;
+      }
     },
 }
 </script>

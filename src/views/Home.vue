@@ -1,27 +1,30 @@
 <template>
   <NavBar/>
-  <WelcomeCpp/>
-  <AddCoin @added="change"/>
-  <ProfitDisplay :key="refreshComp"/>
+  <Welcome/>
+  <!-- <AddCoin @added="change"/> -->
+  <YourDisplay :key="refreshComp"/>
+  <AllDisplay/>
   <br>
   <Logout/>
 </template>
 
 <script>
-import WelcomeCpp from '@/components/WelcomeCpp.vue'
-import AddCoin from '@/components/AddCoin.vue';
-import ProfitDisplay from '@/components/ProfitDisplay.vue';
+import Welcome from '@/components/Welcome.vue'
+// import AddCoin from '@/components/AddCoin.vue';
+import YourDisplay from '@/components/YourDisplay.vue'
 import NavBar from '@/components/NavBar.vue'
 import Logout from '@/components/Logout.vue'
+import AllDisplay from '@/components/AllDisplay.vue'
 
 export default {
   name: 'App',
   components: {
-    WelcomeCpp,
-    AddCoin,
-    ProfitDisplay,
+    Welcome,
+    // AddCoin,
+    YourDisplay,
     NavBar,
     Logout,
+    AllDisplay,
   },
 
   data() {
@@ -31,9 +34,9 @@ export default {
   },
 
   methods: {
-    change() {
-      this.refreshComp += 1
-    }
+    // change() {
+    //   this.refreshComp += 1
+    // }
   }
 }
 </script>

@@ -1,14 +1,21 @@
 import firebase from 'firebase/compat/app';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA5RgBMxpevxp9__4yM8gDLbZLVCQuu7p0",
-    // authDomain: "democpp-e38a1.firebaseapp.com",
-    authDomain: "democpp-e38a1.firebaseapp.com",
-    projectId: "democpp-e38a1",
-    storageBucket: "democpp-e38a1.appspot.com",
-    messagingSenderId: "191532566192",
-    appId: "1:191532566192:web:309f02e157bc90be79dd75"
-  };
+
+  apiKey: "AIzaSyD0HSZFdz-TvLS4MIhuvyz8C-LSQ1OE4J8",
+
+  authDomain: "demosch.firebaseapp.com",
+
+  projectId: "demosch",
+
+  storageBucket: "demosch.appspot.com",
+
+  messagingSenderId: "528425014464",
+
+  appId: "1:528425014464:web:a23994a0f6146e10ba0925"
+
+};
+
 
 //Initialise Firebase
 firebase.initializeApp(firebaseConfig);

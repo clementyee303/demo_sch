@@ -1,12 +1,12 @@
 <template>
   <NavBar/>
-  <h3>This was created to practice the use of components with vue.js and the integration of
-    firebase funtionalities such as database management and login auth process
+  <h3>This was created to showcase the use of database storage and REST api usage 
   </h3>
-  <h2>Welcome to CPP</h2>
+  <h2>Welcome to Demo School</h2>
   <h3>            
-    Crypto Paper Portfolio (CPP) is an app to to track your cryto portfolio. <br>
-    Enter coin details and get real time Profit and Loss update of your Portfolio.
+    Demo School is a results tracker web app <br>
+    Your results displays your results based on your account's UID
+    All resutls displays all students' results
   </h3>
   <br>
   <Logout/>
@@ -28,8 +28,8 @@ export default {
 
 <style scoped>
 h2 {
-    background-color: gold;
-    color: black;
+    background-color: firebrick;
+    color: whitesmoke;
 }
 
 </style>
