@@ -1,6 +1,6 @@
 <template>
   <NavBar/>
-  <h3>This was created to showcase the use of database storage and REST api usage 
+  <h3>This was created to showcase the use of database storage and REST API usage 
   </h3>
   <h2>Welcome to Demo School</h2>
   <h3>            

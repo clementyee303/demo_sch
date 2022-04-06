@@ -16,6 +16,8 @@ import NavBar from '@/components/NavBar.vue'
 import Logout from '@/components/Logout.vue'
 import AllDisplay from '@/components/AllDisplay.vue'
 
+const API_URL = "http://localhost:4000/messages";
+
 export default {
   name: 'App',
   components: {
@@ -37,6 +39,13 @@ export default {
     // change() {
     //   this.refreshComp += 1
     // }
+  },
+  mounted() {
+        fetch(API_URL)
+      .then(response => response.json())
+      .then(result => {
+        console.log(result);
+      });
   }
 }
 </script>
